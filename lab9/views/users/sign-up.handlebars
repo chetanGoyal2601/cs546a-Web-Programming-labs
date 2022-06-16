@@ -1,0 +1,42 @@
+<header>
+    <h1>Sign Up</h1>
+</header>
+
+<main>
+    <form action="/signup" method="post" id="userForm">
+
+        <div>
+            <label for="username">Username</label><br />
+            <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter username"
+                value="{{username}}"
+                required="required"
+            />
+        </div>
+
+        <div>
+            <label for="password">Password</label><br />
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter password"
+                value="{{password}}"
+                required="required"
+            />
+        </div>
+
+        <button type="submit">Sign Up</button>
+
+        {{#if error}}
+            <p id="error">{{error}}</p>
+        {{/if}}
+    </form>
+    <br />
+    <div id="errorUsername" class="error" hidden>You must provide a valid username with at least 4 characters containing alphanumeric values only</div><br />
+    <div id="errorPassword" class="error" hidden>You must provide a valid a password which is at least 6 character long</div>
+    <script src="/public/js/userLoginSignupValidation.js"></script>
+</main>

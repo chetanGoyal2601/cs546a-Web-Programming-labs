@@ -1,0 +1,53 @@
+body {
+    background: #fefefe;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 15pt;
+}
+  
+main {
+    max-width: 75%;
+    margin: auto;
+}
+  
+header {
+    border-bottom: 1px solid #afafaf;
+}
+  
+h1 {
+    color:blueviolet ;
+    margin-bottom: 5px;
+}
+  
+h1 {
+    font-size: 2rem;
+}
+  
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+  
+.post {
+    width: 75%;
+    border-bottom: 1px dashed #333;
+}
+
+.is-prime {
+    color: #00E676
+}
+
+.not-prime {
+    color: #FF3D00
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:fit-content ;   /* Height of the footer */
+    background:#6cf;
+}
+
+.error {
+     color:darkred
+}

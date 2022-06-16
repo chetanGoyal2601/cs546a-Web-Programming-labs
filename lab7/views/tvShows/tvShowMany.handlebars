@@ -1,0 +1,30 @@
+<h2><span class="color-primary">{{showSearchTerm}}</span></h2>
+<section>
+
+    {{#if tvShows.length}}
+        <ul>
+            {{#each tvShows}}
+                <li class="show-list">
+                    <a
+                        class="link"
+                        href="/show/{{show.id}}"
+                        target="_blank"
+                    >{{show.name}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+
+    {{#unless tvShows.length}}
+        <p class="show-not-found">We're sorry, but no results were found for
+            {{searchTerm}}.</p>
+    {{/unless}}
+
+    {{#if error}}
+        <p class="error-not-found">{{error}}</p>
+    {{/if}}
+
+    <a href="/" class="link-primary">
+        Make another search</a>
+
+</section >

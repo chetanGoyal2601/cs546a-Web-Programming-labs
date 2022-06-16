@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<article>
+    <p class="width">Please fill the form wherein you can search
+        for a tv show by reference of a name. Enter a reference name, and all
+        TV shows containing that name will appear!
+    </p>
+    <form action="/searchshows" method="post" class="width">
+        <label for="searchTerm" class="form-label">Search</label>
+        <input
+            id="showSearchTerm"
+            name="showSearchTerm"
+            type="text"
+            placeholder="Enter show name"
+            class="form-control"
+            required="required"/>
+        <input type="submit" value="TV SHOW Search" class="btn-grad" />
+    </form>
+</article>

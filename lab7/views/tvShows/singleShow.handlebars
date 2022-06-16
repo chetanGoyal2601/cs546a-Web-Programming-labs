@@ -1,0 +1,43 @@
+<article>
+    {{#unless error}}
+        
+            <h1 class="show-name">{{show.showName}}</h1>
+            <img
+                class="show-image"
+                src="{{show.showImage.medium}}"
+                alt="NA"
+            />
+            <dl>
+                <dt>Language</dt>
+                <dd>{{show.showLanguage}}</dd>
+
+                <dt>Genres</dt>
+                {{#if show.showGenres}}
+                <dd>
+                    <ul>
+                        {{#each show.showGenres}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </dd>
+                {{else}}
+                    <dd>NA</dd>
+                {{/if}}
+                
+
+                <dt>Rating</dt>
+                <dd>{{show.showRating}}</dd>
+
+                <dt>Network</dt>
+                <dd>{{show.showNetwork}}</dd>
+
+                <dt>Summary</dt>
+                <dd><p class = "show-summary">{{{show.showSummary}}}</p></dd>
+            </dl>
+        
+    {{/unless}}
+
+    {{#if error}}
+        <p class="error-not-found">{{error}}</p>
+    {{/if}}
+</article>

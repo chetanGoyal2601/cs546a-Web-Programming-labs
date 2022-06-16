@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TV Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <h1>
+            TV Guide
+        </h1>
+    </header>
+    
+    <div>
+        <p>Search information for your favorite TV shows!</p>
+    <br>
+        <form id="searchForm">
+            <label for="search_term">Enter the name of the show in searchbar: </label>
+            <input type="search" placeholder="Show name" name="search_term" id="search_term">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <p id="error" hidden>Search can not be empty!</p>
+    
+    <div id="show" hidden>
+    </div>
+    <ul id="showList" hidden>
+    </ul>
+    <div id="goBack">
+        <a id="homeLink" href="/" hidden>Back to All Shows</a>
+    </div>
+    <footer>
+        Chetan Goyal 20005334
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="/public/js/basic_ajax_with_jquery.js"></script>
+
+</body>
+
+</html>
